@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contents="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Krishna's Portfolio</div>
+            <div class="right">
+                <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About Me</a></li>
+                   <li><a href="#">Skills</a></li>
+                   <li><a href="#">Projects</a></li>
+                   <li><a href="#">Contact Me</a></li>
+
+                  <!-- <i class="fa fa-times" onclick="closemenu"></i> -->
+                </ul>
+                <!-- <i class="fa fa-bars" onclick="openmenu"></i> -->
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first-section">
+            <div class="leftsection">
+                Hello, My name is <span class="name">Krishna Bareth</span>
+                <div> and I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="kb.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section class="second-section">
+            <h1 class="sub-title">About Me</h1>
+
+            <div class="box">I am Krishna Bareth, currently Pursuing MCA from GITS, Udaipur. A Web Developer with the Experience in Programming languages and interest in designing and building web Applications. I am eager to apply my academic knowledge and passion for technology in a real-world setting. I am looking for opportunities that will allow me to grow at as a Developer, work along side experienced professionals who can Mentor me in the early stages of my career.</div>
+
+                <div class="btn">
+                    <a href="#">Download CV</a>
+                </div>
+        </section>
+        <hr>
+
+       <section class="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h3>Web Development</h3>
+                    <p>Web development involves designing, building, and maintaining websites for various purposes, ranging from personal blogs to complex e-commerce platforms.
+                    </p>
+                </div>
+                    <div>
+                        <i class="fa fa-crop" aria-hidden="true"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>UI design focuses on creating the visual elements that users interact with when using a digital product,and UX design encompasses the entire user journey and aims to create a positive, meaningful experience for users.</p>
+                </div>
+                    <div>
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                    <h3>Content Writer</h3>
+                    <p>As a content writer, your role involves crafting engaging and informative written material for various platforms such as websites, blogs, social media, or marketing collateral.
+                    </p>
+                </div>
+            </div>
+        </div>
+       </section>
+       <hr>
+
+       <section class="fourth-section">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+        <div class="project">
+            <img src="OIP1.jpg" alt="">
+            <div class="layer">
+            <h3>AMAZON CLONE</h3>
+            <p>This created by using HTML & CSS to display the layout and style.</p>
+            <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i>
+            </a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="OIP2.jpg" alt="">
+            <div class="layer">
+            <h3>TO-DO LIST</h3>
+            <p>This app. contains HTML structure,CSS style and Javascript functions to add, edit, delete the tasks.</p>
+            <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i>
+            </a>
+        </div>
+        </div>
+        <div class="project">
+            <img src="OIP3.jpg" alt="">
+            <div class="layer">
+            <h3>DIGITAL CLOCK</h3>
+            <p>This contains HTML,CSS to display the layout & Javascript to update the current time, seconds, minutes, and hours.</p>
+            <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i>
+            </a>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="contact">
+                        <h2 class="sub-title">Contact Me</h2>
+                        <p>Feel free to get in touch with me using the form below.</p>
+                        <form action="#" method="POST">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
+                
+    </section>
+    </main>
+
+    <footer>
+        <p>copyrights@ 2024 Krishna</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.','Content Writer.','UI/UX Designer','Editor.'],
+          typeSpeed: 50,
+        });
+      </script>
+     <!-- <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+      </script> -->
+</body>
+</html>
